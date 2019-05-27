@@ -2,7 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   get '/reverse/:id' do
-    puts params
+    erb :reverse
   end
 
   post '/reverse' do
